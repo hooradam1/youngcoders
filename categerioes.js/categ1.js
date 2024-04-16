@@ -13,8 +13,10 @@ menu.onclick = () => {
 window.onscroll = () => {
     navbar.classList.remove('active');
 }
+
+
 // Dark Mode
-let darkmode = document.querySelector('#darkmode');
+let darkmode = document.querySelector('#darkmodea');
 
 darkmode.onclick = () => {
     if(darkmode.classList.contains('bx-moon')){
@@ -27,3 +29,13 @@ darkmode.onclick = () => {
 }
 
 /////////////////////////////
+
+
+ScrollReveal().reveal('#cat',{
+    delay: 75,
+    duration: 1500,
+    opacity: 0,
+    distance:'40px' ,
+    origin: "top",
+    reset: true
+  });

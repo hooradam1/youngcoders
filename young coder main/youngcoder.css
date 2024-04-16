@@ -641,16 +641,16 @@ margin-bottom: 50px;
 
 
 .footer{
-  background:#fefefe;
+  background:transparent;
   padding:30px 0px;
   font-family: 'Play', sans-serif;
   text-align:center;
-  margin-top: 100px;
+
   }
   
   .footer .row{
   width:100%;
-  margin:1% 0%;
+
   padding:0.6% 0%;
   color:gray;
   font-size:0.8em;

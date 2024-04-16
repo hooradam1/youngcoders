@@ -169,9 +169,12 @@ body {
   font-size: 25px;
   cursor: pointer;
 }
+
+
+
 header {
   position: relative;
-  width: 100%;
+  width: 90%;
   top: 0;
   right: 0;
   z-index: 1000;
@@ -180,8 +183,11 @@ header {
   justify-content: space-between;
   background: var(--bg-color);
   padding: 18px 100px;
-  box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px var(--main-color);;
   margin-bottom: 50px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .logo {
   font-size: 1.2rem;
@@ -206,24 +212,62 @@ header {
   display: none;
 }
 .home {
-  width: 100%;
+
+  width: 90%;
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
+  border-radius: 13px;
+box-shadow:10px 10px 8px #7a7575a8 ;
+padding: 30px 35px;
+position: relative;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+
+
 }
 
-.home-img{
-  transform: translateX(290%);
-  transition: transform 0.9s ease;
+
+
+.home-img {
+  width: 80%; /* Fallback for non-responsive browsers */
+  max-width: 300px; /* Ensures consistent width on smaller screens */
+  margin: 0 auto; /* Centers the image horizontally */
+  position: relative; /* Required for absolute positioning of the image */
 }
 
 .home-img img {
-  width: 100%;
-  transform: translateX(-280%);
-  border-radius: 20px;
+  width: 130%; /* Ensures image fills the container width */
+ 
+
+
 }
+
+
+
+@keyframes my-animation {
+  from {
+    background-color: transparent;
+    width:0px;
+    top: 10px;
+    left:40%;
+  
+    
+  }
+  to {
+    background-color: transparent;
+    width: 300px;
+    top: 100px;
+    left: 40%;
+  }
+}
+
+
+
 .home-text h1 {
   font-size: var(--big-font);
   color: var(--main-color);
@@ -239,6 +283,7 @@ header {
   border-radius: 0.5rem;
   color: #fff;
   font-size: 25px;
+  margin-bottom: 20px;
 }
 .btn1:hover {
   background: #ffa400;
@@ -469,3 +514,65 @@ header {
   }
 }
 /* landing */
+/*footer*/
+
+.footer{
+  background: #7a75754d;
+ 
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  margin-top: 100px;
+  height: 30vh;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:black;
+  font-size:1em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:black;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color: var(--main-color) ;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:720px){
+  .footer{
+  text-align:left;
+  height: 50vh;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+  
+
+  /*running photo */
+
+  

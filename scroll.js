@@ -1,5 +1,135 @@
+ScrollReveal().reveal('#s1',{
+    delay: 75,
+    duration: 1500,
+    opacity: 0,
+    distance:'40px' ,
+    origin: "top",
+    reset: true
+  });
+  
+  ScrollReveal().reveal('#s1-team',{
+    delay: 75,
+    duration: 1500,
+    opacity: 0,
+    distance:'40px' ,
+    origin: "top",
+    reset: true
+  });
 
-// Check If There's Local Storage Color Option
+
+  ScrollReveal().reveal('#s2',{
+    delay: 125,
+    duration: 1500,
+    opacity: 0,
+    distance: '40px',
+    origin:"top",
+    reset: true
+  });
+  
+
+  ScrollReveal().reveal('#s2-Gallery',{
+    delay: 125,
+    duration: 1500,
+    opacity: 0,
+    distance:'40px' ,
+    origin: "top",
+    reset: true
+  });
+
+
+
+  ScrollReveal().reveal('#s3',{
+    delay: 175,
+    duration: 1500,
+    opacity: 0,
+    distance:'40px' ,
+    origin: "bottom",
+    reset: true
+  });
+
+
+  ScrollReveal().reveal('#s4',{
+    delay: 225,
+    duration: 1500,
+    opacity: 0,
+    distance:'40px' ,
+    origin: "top",
+    reset: true
+  });
+
+  ScrollReveal().reveal('#s5',{
+    delay: 225,
+    duration: 1500,
+    opacity: 0,
+    distance: '40px',
+    origin: "bottom",
+    reset: true
+  });
+
+
+  ScrollReveal().reveal('#s6',{
+    delay: 275,
+    duration: 1500,
+    opacity: 0,
+    distance: '40px',
+    origin: "top",
+    reset: true
+  });
+
+
+  ScrollReveal().reveal('#s6-1',{
+    delay: 275,
+    duration: 1500,
+    opacity: 0,
+    distance: '40px',
+    origin: "bottom",
+    reset: true
+  });
+
+  
+  ScrollReveal().reveal('#s6-2',{
+    delay: 275,
+    duration: 1500,
+    opacity: 0,
+    distance: '40px',
+    origin: "bottom",
+    reset: true
+  });
+
+
+  ScrollReveal().reveal('#s6-pic',{
+    delay: 275,
+    duration: 1500,
+    opacity: 0,
+    distance: '40px',
+    origin: "top",
+    reset: true
+  });
+
+
+
+
+  ScrollReveal().reveal('#s7',{
+    delay: 325,
+    duration: 1500,
+    opacity: 0,
+    distance: '40px',
+    origin: "top",
+    reset: true
+  });
+
+  ScrollReveal().reveal('#s8',{
+    delay: 375,
+    duration: 1500,
+    opacity: 0,
+    distance: "40px",
+    origin: "top",
+    reset: true
+  });
+
+
+  //new 
+  // Check If There's Local Storage Color Option
 let mainColors = localStorage.getItem("color_option");
 
 // If There's Color Item In Local Storage
@@ -129,6 +259,7 @@ randomBackEl.forEach(span => {
 
 
 
+
 // Select Landing Page Element
 let landingPage = document.querySelector(".landing-page");
 
@@ -155,7 +286,6 @@ function randomizeImgs() {
 }
 
 randomizeImgs();
-
 
 // Select All Bullets
 const allBullets = document.querySelectorAll(".nav-bullets .bullet");
@@ -364,7 +494,9 @@ document.addEventListener("click", function () {
     arrowIconProjects.classList.remove("open");
     projeMenu.style.display = "none";
 });
-//
+
+//start our team js 
+
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -438,141 +570,10 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 
+                          //main gallery pop up overlay //
 
 
-
-//n//
-
-let questions = document.querySelectorAll(".question")
-let icons = document.querySelectorAll(".Icon")
-let parags = document.querySelectorAll(".des")
-icons.forEach((icon) => {
-    icon.addEventListener("click", (e) => {
-        if (!icon.classList.contains("rotate")) {
-            icon.classList.add("rotate")
-            e.currentTarget.parentElement.nextElementSibling.classList.remove("hide")
-        } else {
-            icon.classList.remove("rotate")
-            e.currentTarget.parentElement.nextElementSibling.classList.add("hide")
-        }
-    })
-})
-
-
-//nn/ read more /
-
-  // Your JavaScript code here
-
- // Get the button and the additional content
- document.addEventListener('DOMContentLoaded', function() {
-  // Get the button and the additional content
-  const button = document.getElementById('hideshow');
-  const additionalContent = document.querySelector('.additional-content');
-
-  // Toggle the visibility of the additional content when the button is clicked
-  button.addEventListener('click', function() {
-      // Toggle the 'hidden' class of the additional content
-      if (additionalContent) {
-          additionalContent.classList.toggle('hidden');
-
-          // Change the button text based on the visibility of the additional content
-          if (additionalContent.classList.contains('hidden')) {
-              button.textContent = 'Read More';
-          } else {
-              button.textContent = 'Read Less';
-          }
-      } else {
-          console.error('Additional content element not found');
-      }
-  });
-});
-//nnnn//
-const sliderContainer = document.querySelector(".slider-container");
-const slideRight = document.querySelector(".right-slide");
-const slideLeft = document.querySelector(".left-slide");
-const upButton = document.querySelector(".up-button");
-const downButton = document.querySelector(".down-button");
-const slidesLength = slideRight.querySelectorAll("div").length;
-
-let activeSlideIndex = 0;
-
-slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
-
-const changeSlide = (direction) => {
-  const sliderHeight = sliderContainer.clientHeight;
-  if (direction === "up") {
-    activeSlideIndex++;
-    if (activeSlideIndex > slidesLength - 1) activeSlideIndex = 0;
-  } else if (direction === "down") {
-    activeSlideIndex--;
-    if (activeSlideIndex < 0) activeSlideIndex = slidesLength - 1;
-  }
-  slideRight.style.transform = `translateY(-${
-    activeSlideIndex * sliderHeight
-  }px)`;
-  slideLeft.style.transform = `translateY(${
-    activeSlideIndex * sliderHeight
-  }px)`;
-};
-
-upButton.addEventListener("click", () => changeSlide("up"));
-downButton.addEventListener("click", () => changeSlide("down"));
-
-//nnnnnnnnnnnnn//
-const boxes = document.querySelectorAll(".box");
-
-const checkBoxes = () => {
-  const triggerBottom = (window.innerHeight / 5) * 4;
-  boxes.forEach((box) => {
-    const boxTop = box.getBoundingClientRect().top;
-    if (boxTop < triggerBottom) box.classList.add("show");
-    else box.classList.remove("show");
-  });
-};
-
-window.addEventListener("scroll", checkBoxes);
-checkBoxes();
- //newwwwwwwwwwwwww//
- const panels = document.querySelectorAll(".panel");
-
-panels.forEach((panel) => {
-  panel.addEventListener("click", () => {
-    removeActiveClasses();
-    panel.classList.add("active");
-  });
-});
-
-const removeActiveClasses = () => {
-  panels.forEach((panel) => {
-    panel.classList.remove("active");
-  });
-};
-////// nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn////
-   
-
-
-'use strict';
-const tabs = document.querySelectorAll('[data-id]');
-const contents = document.querySelectorAll('[data-content]');
-let id = 0;
-
-tabs.forEach(function (tab) {
-    tab.addEventListener('click', function () {
-        tabs[id].classList.remove('active');
-        tab.classList.add('active');
-        id = tab.getAttribute('data-id');
-        contents.forEach(function (box) {
-            box.classList.add('hidea');
-            if (box.getAttribute('data-content') == id){
-                box.classList.remove('hidea');
-                box.classList.add('showa');
-            }
-        });
-    });
-});
-
-
-
+             
 
 // Create Popup With The Image
 let ourGallery = document.querySelectorAll(".gallery1 img");
@@ -658,7 +659,77 @@ document.addEventListener("click", function (e) {
 
 });
 
+             
+
+//Question and answer//
+
+let questions = document.querySelectorAll(".question")
+let icons = document.querySelectorAll(".Icon")
+let parags = document.querySelectorAll(".des")
+icons.forEach((icon) => {
+    icon.addEventListener("click", (e) => {
+        if (!icon.classList.contains("rotate")) {
+            icon.classList.add("rotate")
+            e.currentTarget.parentElement.nextElementSibling.classList.remove("hide")
+        } else {
+            icon.classList.remove("rotate")
+            e.currentTarget.parentElement.nextElementSibling.classList.add("hide")
+        }
+    })
+})
 
 
+//2024 teams gallery //
+const sliderContainer = document.querySelector(".slider-container");
+const slideRight = document.querySelector(".right-slide");
+const slideLeft = document.querySelector(".left-slide");
+const upButton = document.querySelector(".up-button");
+const downButton = document.querySelector(".down-button");
+const slidesLength = slideRight.querySelectorAll("div").length;
+
+let activeSlideIndex = 0;
+
+slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
+
+const changeSlide = (direction) => {
+  const sliderHeight = sliderContainer.clientHeight;
+  if (direction === "up") {
+    activeSlideIndex++;
+    if (activeSlideIndex > slidesLength - 1) activeSlideIndex = 0;
+  } else if (direction === "down") {
+    activeSlideIndex--;
+    if (activeSlideIndex < 0) activeSlideIndex = slidesLength - 1;
+  }
+  slideRight.style.transform = `translateY(-${
+    activeSlideIndex * sliderHeight
+  }px)`;
+  slideLeft.style.transform = `translateY(${
+    activeSlideIndex * sliderHeight
+  }px)`;
+};
+
+upButton.addEventListener("click", () => changeSlide("up"));
+downButton.addEventListener("click", () => changeSlide("down"));
 
 
+// on spot task //
+
+'use strict';
+const tabs = document.querySelectorAll('[data-id]');
+const contents = document.querySelectorAll('[data-content]');
+let id = 0;
+
+tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+        tabs[id].classList.remove('active');
+        tab.classList.add('active');
+        id = tab.getAttribute('data-id');
+        contents.forEach(function (box) {
+            box.classList.add('hidea');
+            if (box.getAttribute('data-content') == id){
+                box.classList.remove('hidea');
+                box.classList.add('showa');
+            }
+        });
+    });
+});
