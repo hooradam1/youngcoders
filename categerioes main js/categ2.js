@@ -44,7 +44,10 @@ sr.reveal(`.home-text, .home-img,
 function DownloadFile(pdfUrl) {
     const downloadLink = document.createElement('a');
     downloadLink.href = pdfUrl;
-    downloadLink.download = "/myfiles/Selim.pdf"; // Optional: Set a custom filename
+    downloadLink.download = "/myfiles/CodersCup_manuel_entry_level.pdf"; 
+    // Optional: Set a custom filename
+    downloadLink.download = "/myfiles/CodersCup_manuel_Principal_level .pdf"
+
     downloadLink.style.display = 'none'; // Hide the link for a cleaner experience
   
     document.body.appendChild(downloadLink);

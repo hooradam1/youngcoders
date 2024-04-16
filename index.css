@@ -440,8 +440,8 @@ background-image: url(/imgs/coding\ main.png);
   }
   
   #companyLogo{
-  width: 70px;
-  height: 100%;
+    width: 60px;
+    height: 97%;
   padding: 2px;
   }
   
@@ -751,7 +751,7 @@ background-image: url(/imgs/coding\ main.png);
     }
     /* end landing */
     /*start our team */
-  
+ 
 
   .containerBoxing {
     
@@ -1241,6 +1241,11 @@ display: none;
 
 
 /*  start 2024 teams  */
+.left-slide img {
+  size: 15px;
+}
+
+
 .main-container-gallery{
     position: relative;
     padding: 30px 35px;
@@ -1267,7 +1272,7 @@ width: 95%;
     overflow: hidden;
     
     height: 100vh;
-    border-radius: 13px;
+    border-radius: 122px;
     
   }
   
@@ -1294,8 +1299,13 @@ width: 95%;
     font-size: 40px;
     margin-bottom: 10px;
     margin-top: -30px;
+    color: #000;
   }
-  
+
+
+  .left-slide p {
+    color: rgb(63 56 162);
+  }
   .right-slide {
     height: 100%;
     position: absolute;
@@ -1341,13 +1351,19 @@ width: 95%;
     transform: translateX(-100%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-  }
+    background-color: #8080806b;
+    color: #131131;
+}
+  
   
   .slider-container .action-buttons .up-button {
     transform: translateY(-100%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-  }
+    background-color: #8080806b;
+    color: #131131;
+}
+  
   
   /* end of 2024 teams  /*
 
