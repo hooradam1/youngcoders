@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>Young Coder|| Main</title>
+    <!--main css file-->
+    <link rel="stylesheet" href="index.css"/>
+    
+    <!--font awesome liberary -->
+    <link rel="stylesheet" href="/css/all.min.css"/>
+    <!--render all element normal-->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!--google font -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+
+    <script>
+      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+        key: "YOUR_API_KEY",
+        v: "weekly",
+        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+        // Add other bootstrap parameters as needed, using camel case.
+      });
+    </script>
+   
+  </head>      
+
+
+<body>
+    <!-- Header -->
+    
+   <!-- Start Settings Box -->
+   <div class="settings-box">
+    <div class="toggle-settings">
+      <i class="fa fa-gear"></i>
+    </div>
+    <div class="settings-container">
+      <div class="option-box">
+        <h4>Colors</h4>
+        <ul class="colors-list">
+          <li class="active" data-color="#FF9800"></li>
+          <li data-color="#E91E63"></li>
+          <li data-color="#009688"></li>
+          <li data-color="#03A9F4"></li>
+          <li data-color="#4CAF50"></li>
+        </ul>
+      </div>
+      <div class="option-box">
+        <h4>Random Backgrounds</h4>
+        <div class="random-backgrounds">
+          <span class="yes active" data-background="yes">Yes</span>
+          <span class="no" data-background="no">No</span>
+        </div>
+      </div>
+      <div class="option-box">
+        <h4>Show Bullets</h4>
+        <div class="bullets-option">
+          <span class="yes active" data-display="show">Yes</span>
+          <span class="no" data-display="hide">No</span>
+        </div>
+      </div>
+      <button class="reset-options">Reset Options</button>
+    </div>
+  </div>
+  <!-- End Settings Box -->
+
+  <!-- Start Nav Bullets -->
+  <div class="nav-bullets">
+    <div class="bullet" data-section=".about-us">
+      <div class="tooltip"><a href="questions">About Us</a></div>
+    </div>
+    <div class="bullet" data-section=".skills">
+      <div class="tooltip">Our Skills</div>
+    </div>
+    <div class="bullet" data-section=".gallery">
+      <div class="tooltip">Our Gallery</div>
+    </div>
+    <div class="bullet" data-section=".timeline">
+      <div class="tooltip">Timeline</div>
+    </div>
+    <div class="bullet" data-section=".features">
+      <div class="tooltip">Features</div>
+    </div>
+    <div class="bullet" data-section=".testimonials">
+      <div class="tooltip">Testimonials</div>
+    </div>
+  </div>
+  <!-- End Nav Bullets -->
+
+
+
+
+      <!-- Start Landing Page -->
+   <div  class="landing-page">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="header-area">
+        <header>
+
+        <div class="companyBar">
+          <a href="#" class="logo">Codercup</a>
+  
+          <div id="companyLogo">
+              <img src="imgs/transparent background.png" alt="">
+          </div>
+  
+      </div>
+        <div class="links-container">
+          <input type="checkbox" id="menu-bar">
+             <label for="menu-bar"><span id="menuicon" class="material-symbols-outlined"> </span></label>
+         <nav class="navbar">
+         <ul>
+
+          <li><a href="">home</a></li>
+          <li><a href="#s2">Gallery</a></li>
+
+          <li><a href="#" id="hizmetler-link"><span
+ class="material-symbols-outlined arrow">2024 championship</span></a>
+
+              <ul id="hizmetmenu">
+                  <li><a href="/young coder main/ coder main/youngcoder.html#youngcoder-gallery">gallary</a></li>
+                  <li><a href="/young coder main/youngcoder.html">video</a></li>
+                  <li>
+                    <a href="" id="eticaret">2020<span id="msoe" class="material-symbols-outlined ticspan">more info</span></a>
+
+                      <ul id="eticaretMenu">
+                          <li><a href="#s1">team</a></li>
+                          <li><a href="/young coder main/youngcoder.html#connectus">conntact us </a></li>
+                      </ul>
+
+                    </li>
+
+              </ul>
+
+          </li>
+
+          <li><a id="projelerLink" href="">tasks<span class="material-symbols-outlined arrow"></span></a>
+
+              <ul id="projemenu">
+                  <li><a href="#task">easy</a></li>
+                  <li><a href="#task">medium</a></li>
+                  <li><a href="#task">difficult</a></li>
+                
+              </ul>
+
+          </li>
+          <li><a href="#s6">themes</a></li>
+
+      </ul>
+  </nav>
+    </div>
+        </div>
+        <div id="about" class="introduction-text">
+          <h1> THE  <span> YOUNG CODER</span>  COMPETITION </h1>
+          <p> It is an annual game design competition aimed to challenge students to program a game with a certain standard, which will challenge their creativity and curiosity to learn and master programming. Every year will be a different theme for the competition.</p>
+        </div>
+
+      </div>
+    </div>
+
+ 
+
+  <!-- End Landing Page -->
+    
+
+
+    <!-- Main Content -->
+    <!-- Section 1 -->
+  
+  <!--start team -->
+<!-- Section 1 -->
+
+<section class="section" id="s1">
+  <div class="content-wrapper">
+    <div class="img1"></div>
+    <article>
+        <h2>Everything starts with our team</h2>
+        <p> “Talent wins games, but teamwork and intelligence win championships.”</p>
+       
+    </article>
+  </div>
+</section>
+<!-- End Section 1 -->
+<div class="containerBoxing" >
+    <div class="main-heading">
+        <h2>our Team</h2>
+      </div>
+            <div class="wrapper" id="s1-team" >
+              <i id="left" class="fa-solid fa-angle-left" ></i>
+              <ul class="carousel">
+                <li class="card">
+                  <div class="img"><img src="imgs/manger women 1.jpg" alt="img" draggable="false"></div>
+                  <h2>Dina Nagy </h2>
+                  <span>Chairman of the organizing committee</span>
+                </li>
+                <li class="card">
+                  <div class="img"><img src="imgs/manger women2.png" alt="img" draggable="false"></div>
+                  <h2>Esraa Bahaa</h2>
+                  <span>Chairman of the logistic committee</span>
+                </li>
+                <li class="card">
+                  <div class="img"><img src="imgs/manger man 1.jpg" alt="img" draggable="false"></div>
+                  <h2>AbdEl-Wahab Adam</h2>
+                  <span>Chairman of the arbitration committee</span>
+                </li>
+                <li class="card">
+                  <div class="img"><img src="imgs/manger man 2.jpg" alt="img" draggable="false"></div>
+                  <h2>Mohamed hossam</h2>
+                  <span>Vice Chairman of the Organizing Committee</span>
+                </li>
+              
+              </ul>
+              <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        
+          </div>
+    
+        
+
+  <!--end team-->
+
+   
+    <!-- Section 2 -->
+    
+
+    <section class="section" id="s2">
+      <div class="content-wrapper">
+        <div class="img2"></div>
+        <article>
+            <h2>Discover the youngcoder Gallery</h2>
+            <p>Glory Days: Relive our championship moments</p>
+            <a href="/young coder main/youngcoder.html#youngcoder-gallery">Want to see more Photos ?</a>
+        </article>
+      </div>
+      
+    </section>
+
+    <!-- End Section 2 -->
+    <!-- Start main of the Galleries -->
+ <div class="gallery1">
+    <div class="container">
+      <div class="main-heading">
+        <h2>our Gallery</h2>
+        
+      </div>
+      <div class="images-box" id="s2-Gallery">
+        <img src="imgs/main first.jpg" alt="Image One">
+        <img src="imgs/main gallery 1.jpg" alt="Image Two">
+        <img src="imgs/main gallery 2.jpg" alt="Image Three">
+        <img src="imgs/main 3.jpg" alt="Image Four">
+        <img src="imgs/main 4.jpg" alt="Image Five">
+        <img src="imgs/main 5.jpg" alt="">
+        <img src="imgs/main 7.jpg" alt="">
+        <img src="imgs/main6.jpg" alt="">
+        <img src="imgs/main8.jpg" alt="">
+        <img src="imgs/main11.jpg" alt="">
+        <img src="imgs/main12.jpg" alt="">
+        <img src="imgs/main14.jpg" alt="">
+        <img src="imgs/main13.jpg" alt="">
+        <img src="imgs/main15.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- End main of the Galleries -->
+  
+
+    <!-- Section 3 -->
+    <section class="section" id="s3">
+      <div class="content-wrapper">
+        <div class="img3"></div>
+        <article class="title">
+            <h2>Questions and Answers </h2>
+            <p>if you have any questions please do not hesitate to contact us</p>
+            
+        </article>
+      </div>
+    </section>
+
+<!--start question-->
+
+
+<section class="questions">
+  
+    <div class="container">
+      <div class="main-heading">
+        <h2>Get To Know Us</h2>
+        
+      </div>
+        <div class="ask">
+            <div class="question">
+                <h2 class="title_3"><span>01</span>
+                    <p>What is the focus for 2024?</p>
+                </h2>
+                <div class="Icon"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            <div class="des hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere delectus voluptas voluptatem voluptates, amet vero quis! Ratione sapiente quia ut numquam delectus dolor, exercitationem minus totam fugiat assumenda tenetur. Vel? </div>
+        </div>
+        <div class="ask">
+            <div class="question">
+                <h2 class="title_3"><span>02</span>
+                    <p>What is the coder cup  Competition?</p>
+                </h2>
+                <div class="Icon"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            <div class="des hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime itaque impedit dolore quia aperiam debitis culpa, id fuga accusamus officiis eum corporis quae, ullam dolorem nemo aliquid natus voluptatem quod? </div>
+        </div>
+        <div class="ask">
+            <div class="question">
+                <h2 class="title_3"><span>03</span>
+                    <p>What is the 2024 Task mession ? </p>
+                </h2>
+                <div class="Icon"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            <div class="des hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reiciendis maiores iusto magni quae quas nihil tempora voluptatem repellat, veritatis doloribus molestiae modi ratione amet odio sed ea officiis debitis!</div>
+        </div>
+      
+   
+    </div>
+  </section>
+     
+  <!-- End question -->
+
+    <!-- Section 4 -->
+    <section class="section" id="s4">
+      <div class="content-wrapper">
+        <div class="img4"></div>
+        <article class="title">
+            <h2>lest's Know more About YoungCoder </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt neque eius pariatur eum, possimus quaerat excepturi quod itaque asperiores voluptate animi consequatur ut soluta reiciendis optio esse nobis distinctio id!</p>
+            
+        </article>
+      </div>
+    </section>
+    <!-- Start Articles -->
+<div class="articles" id="articles">
+    <div class="main-heading">
+      <h2>articles</h2>
+
+    </div>
+    <div class="container">
+      
+  
+      <div class="box">
+        <img decoding="async" src="imgs/landing2.jpg" alt="" />
+        <div class="content">
+          <h3>Article 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+        </div>
+        <div class="info">
+          <a  href="articles.html/index article1.html">Read More</a>
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      <div class="box">
+        <img decoding="async" src="imgs/landing2.jpg" alt="" />
+        <div class="content">
+          <h3>Article 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+        </div>
+        <div class="info">
+          <a href="articles.html/article2.html">Read More</a>
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      <div class="box">
+        <img decoding="async" src="imgs/landing3.jpg" alt="" />
+        <div class="content">
+          <h3>Test Title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+        </div>
+        <div class="info">
+          <a href="articles.html/article3.html">Read More</a>
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+      <div class="box">
+        <img decoding="async" src="imgs/landing5.jpg" alt="" />
+        <div class="content">
+          <h3>Test Title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+        </div>
+        <div class="info">
+          <a href="articles.html/article4.html">Read More</a>
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+     
+      
+    </div>
+  </div>
+  
+  
+  <!-- End Articles -->
+
+ <!-- Section 5 -->
+ <section class="section" id="s5">
+  <div class="content-wrapper">
+    <div class="img5"></div>
+    <article class="title">
+        <h2>lest's Know more About YoungCoder teams  </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt neque eius pariatur eum, possimus quaerat excepturi quod itaque asperiores voluptate animi consequatur ut soluta reiciendis optio esse nobis distinctio id!</p>
+        
+    </article>
+  </div>
+</section>
+<!--start 2024 teams-->
+<div class="main-container-gallery ">
+    <div class="main-heading">
+      <h2>2024 Teams</h2>
+     
+    </div>
+  <div class="slider-container">
+    <div class="left-slide">
+      <div style="background-color:#f0efef ">
+        <h1>ETS KOK 1 Leaders</h1>
+        <p>defened the castle </p>
+       
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>ETS KOK 2 Heroes</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>ETS Arom Champions</h1>
+        <p>defened the castle </p>
+      </div>
+
+      <div style="background-color:#f0efef; ">
+        <h1>MR.saver</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>ECO Savers</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>0.08 Stoperz</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>Appy Hour</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>Mawaheb Inventors</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>White knights
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>Emerald Team </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>TALK Team</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef; ">
+        <h1>Emerald Team part 2
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color: #f0efef">
+        <h1>Pyoneers</h1>
+        <p>defened the castle</p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1> Golden Dawn
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>TACTICAL TITANS
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>Errors Team
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>Sparker Cell</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>Defender Team</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>Sprite Squad
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>tactical titans 2
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>Discovery Worldwide
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color: #f0efef">
+        <h1>The Heroes Team
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color: #f0efef">
+        <h1>The United Team
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color: #f0efef">
+        <h1>Techy Defenders
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color: #f0efef">
+        <h1>Diamond minds
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>Little sharks
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>Legandries</h1>
+        <p>defened the castle </p>
+      </div>
+      <div style="background-color:#f0efef ">
+        <h1>ETS Scratch Leaders
+        </h1>
+        <p>defened the castle </p>
+      </div>
+      
+     
+      <div style="background-color:#f0efef ">
+        <h1>ETS Scratch Champions</h1>
+        <p>defened the castle </p>
+      </div>
+
+
+      <div style="background-color: #f0efef">
+        <h1>Sharp Coders ( #Coders)</h1>
+        <p>defened the castle </p>
+      </div>
+
+    </div>
+    <div class="right-slide">
+      <div
+        style="
+          background-image: url(imgs/discovery\ logo.jpg);
+        "
+      ></div>
+      <div
+      style="
+        background-image: url(imgs/manarat\ logo.jpg);
+      "
+    ></div>
+    <div
+    style="
+      background-image: url(imgs/mawaheb\ logo.jpg);
+    "
+  ></div>
+
+ <div
+        style="
+          background-image: url(imgs/roop\ mind\ logo.jpg);
+        "
+      ></div>
+      <div
+      style="
+        background-image: url(imgs/techy\ school\ logo.jpg);
+      "
+    ></div>
+    <div
+    style="
+      background-image: url(imgs/tecno\ kids\ tecno\ future\ logo.jpg);
+    "
+  ></div>
+  <div
+  style="
+    background-image: url(imgs/mawaheb\ logo.jpg);
+  "
+></div>
+<div
+style="
+  background-image: url(imgs/roop\ mind\ logo.jpg);
+"
+></div>
+<div
+style="
+  background-image: url(imgs/team\ 5.jpg);
+"
+></div>
+<div
+style="
+  background-image: url(imgs/team\ 4.jpg);
+"
+></div>
+<div
+style="
+  background-image: url(imgs/team\ 8.jpg);
+"
+></div>
+
+<div
+style="
+  background-image: url(imgs/team\ 9.jpg);
+"
+></div>
+
+
+      <div
+        style="
+          background-image: url(imgs/team\ 11.jpg);
+        "
+      ></div>
+      <div
+        style="
+          background-image: url(imgs/team\ 2.jpg);
+        "
+      ></div>
+     
+    </div>
+    <div class="action-buttons">
+      <button class="down-button">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button class="up-button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+  </div>
+  </div>
+  <!--end 2024 team gallary -->
+
+
+<!--start themes -->
+
+   <!-- Section 6 -->
+ <section class="section" id="s6">
+  <div class="content-wrapper">
+    <div class="img6"></div>
+    <article class="title">
+        <h2>lest's Know more About YoungCoder Theams  </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt neque eius pariatur eum, possimus quaerat excepturi quod itaque asperiores voluptate animi consequatur ut soluta reiciendis optio esse nobis distinctio id!</p>
+        
+    </article>
+  </div>
+</section>
+
+<div class="info-container">
+
+    <div class="main-heading">
+      <h2>themes</h2>
+    
+    </div>
+    <div class="grid">
+    <div class="box">
+        <h2>Save earth resources </h2>
+        
+    </div>
+    <img  class="theme-img" src="imgs/save themmes.jpg">
+</div>
+<div class="grid ">
+    <div id="s6-1" class="box">
+        <h2>defend the castle</h2>
+        
+    </div>
+    <img  class="theme-img" src="imgs/define the castle.jpg">
+</div>
+
+  
+  </div>
+  
+  <!--end themes-->
+
+<!--start spot tasks -->
+  <!-- Section 7 -->
+  <section class="section" id="s7">
+    <div class="content-wrapper">
+    <div class="img7"></div>
+    <article class="title">
+        <h2>lest's Know more About YoungCoder Tasks  </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt neque eius pariatur eum, possimus quaerat excepturi quod itaque asperiores voluptate animi consequatur ut soluta reiciendis optio esse nobis distinctio id!</p>
+        
+    </article>
+    </div>
+</section>
+
+<div class="article2"> 
+    <div class="main-heading">
+      <h2>ON Spot Task</h2>
+      
+    </div>
+    <div class="article2-container">
+    
+        <ul class="tabs" id="task">
+            <li class="active" data-id="0">Easy Task </li>
+            <li data-id="1">Medium Task</li>
+            <li data-id="2">Difficult Task</li>
+            <li data-id="3">NOTE</li>
+          
+        </ul>
+    
+        <div class="contents">
+    
+            <div class="box showa" data-content="0">
+                <img src="imgs/easy.png " alt="">
+                <div>
+                    <h3>Easy Task</h3>
+                    <p>
+                      In the first phase of the coding challenge, teams will be presented with an easy task that needs to be completed within a time limit of 30 minutes. This task is designed to assess the team's ability to solve a moderately challenging problem efficiently and effectively. The objective is to test their fundamental coding skills and problem-solving capabilities within a constrained timeframe. The easy task may involve implementing a specific algorithm, solving a mathematical problem, or writing a piece of code to address a given scenario. The teams will be expected to use their programming knowledge and logical reasoning to come up with an accurate and optimized solution. Attention to detail, code readability, and adherence to coding best practices will also be evaluated.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="box hidea" data-content="1">
+                <img src="imgs/medium task.png" alt="">
+                <div>
+                    <h3>Medium Task</h3>
+                    <p>
+                      Moving on to the second phase, teams will face a medium task that requires a slightly higher level of complexity and problem-solving skills compared to the previous phase. The time limit for this task is extended to 45 minutes, allowing teams to tackle a more intricate challenge. The medium task will test the team's ability to handle more complex algorithms, data structures, or programming concepts. It may involve tasks such as implementing a sorting algorithm, designing a database schema, or creating a more sophisticated program with multiple functionalities. The teams will need to demonstrate their ability to analyze the problem, devise an efficient solution, and implement it correctly within the given timeframe.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="box hidea" data-content="2">
+                <img src="imgs/difficult task.jpg" alt="">
+                <div>
+                    <h3>Difficult Task</h3>
+                    <p>
+                      In the final phase, teams will encounter a difficult task that pushes their coding skills to the limit. This task is intended to challenge their problem-solving abilities, critical thinking, and familiarity with advanced programming concepts. Teams will have a time limit of 1 hour to complete this task. The difficult task may involve complex algorithmic problems, intricate data manipulations, or advanced system design challenges. It will require teams to think creatively, develop robust solutions, and handle potential edge cases. The evaluation will focus on the team's ability to tackle complex problems, write efficient code, and demonstrate strong understanding of advanced programming concepts.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="box hidea" data-content="3">
+              <img src="imgs/note.png" alt="">
+              <div>
+                  <h3>NOTE</h3>
+                  <p>
+                    Throughout all phases of the coding challenge, teams will be assessed based on factors such as code correctness, efficiency, scalability, readability, and adherence to coding standards. The ability to work collaboratively, communicate effectively, and manage time efficiently will also be considered. The goal is to identify teams that exhibit strong problem-solving skills, technical expertise, and the ability to deliver high-quality solutions within specified time constraints
+                  </p>
+              </div>
+          </div>
+    
+        </div>
+    </div>
+  
+  </div>
+
+    <!--end on spot task -->
+
+
+ <!--main catergerios -->
+
+<!-- Section 8 -->
+<section class="section" id="s8">
+  <div class="content-wrapper">
+    <div class="img8"></div>
+    <article class="title">
+        <h2>lest's Know more About YoungCoder championship categrioes  </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt neque eius pariatur eum, possimus quaerat excepturi quod itaque asperiores voluptate animi consequatur ut soluta reiciendis optio esse nobis distinctio id!</p>
+        
+    </article>
+  </div>
+    
+</section>
+
+
+ <div class="Categories">
+
+    <div class="main-heading">
+      <h2>OUR main Catagories  </h2>
+      
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>Entry-level</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Praesentium eligendi laboriosam autem commodi tempore quod numquam
+            eveniet! Vitae nisi beatae laboriosam nostrum quos deserunt itaque
+            minima, voluptas cupiditate quia fugit.
+          </p>
+          <a href="//categerioes main html/categ2.html">Read more</a>
+        </div>
+     
+      </div>
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Praesentium eligendi laboriosam autem commodi tempore quod numquam
+            eveniet! Vitae nisi beatae laboriosam nostrum quos deserunt itaque
+            minima, voluptas cupiditate quia fugit.
+          </p>
+          <a href="//categerioes main html/categ2.html">Read more</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h2>03</h2>
+          <h3>Senior</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Praesentium eligendi laboriosam autem commodi tempore quod numquam
+            eveniet! Vitae nisi beatae laboriosam nostrum quos deserunt itaque
+            minima, voluptas cupiditate quia fugit.
+          </p>
+          <a href="/categerioes main html/categ3.html">Read more</a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h2>04</h2>
+          <h3>Principal</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Praesentium eligendi laboriosam autem commodi tempore quod numquam
+            eveniet! Vitae nisi beatae laboriosam nostrum quos deserunt itaque
+            minima, voluptas cupiditate quia fugit.
+          </p>
+          <a href="/categerioes main html/categ3.html">Read more</a>
+        </div>
+      </div>
+    </div>
+  
+  
+  </div>
+  
+
+ <!--start timeline -->
+
+<!-- Section 9 -->
+
+
+<section class="section" id="s9">
+  <div class="content-wrapper">
+  <div class="img9"></div>
+  <article class="title">
+      <h2> Game On! it's our timeline </h2>
+      <p>Championship Day Showdown</p>
+      
+  </article>
+  </div>
+</section>
+<div class="timeline-container">
+<section id="timeline" id="s10">
+
+  <ul>
+    <li>
+      <i class="fa-solid fa-1"></i>
+      <div class="box">
+        <h3 class="title">6 Aguest 2024</h3>
+        <p>
+        First Day Description
+        </p>
+        <button>Read More</button>
+      </div>
+    </li>
+    <li>
+      <i class="fa-solid fa-2"></i>
+      <div class="box">
+        <h3 class="title">7 Aguest 2024</h3>
+        <p>
+          2nd day Description
+        </p>
+        <button>Read More</button>
+      </div>
+    </li>
+    <li><i class="fa-solid fa-3"></i>
+    
+      <div class="box">
+        <h3 class="title">
+          8 Aguest 2024
+        </h3>
+        <p>
+          third day Description
+        </p>
+        <button>Read More</button>
+      </div>
+    </li>
+         
+    </li>
+  </ul>
+</section>
+</div>
+
+<!--strat location -->
+
+<section class="section" id="s10">
+  <div class="content-wrapper">
+  <div class="img10"></div>
+  <article class="title">
+      <h2> Our Location </h2>
+      <p>"Right here, where the magic happens."</p>
+      
+  </article>
+</div>
+</section>
+
+<div class="loc">
+<section >
+
+    <div class="card1">
+        <div class="card">
+            <div class="left-container">
+              <img  src="imgs/location.png" alt="">
+              <h2 class="gradienttext">Our Location</h2>
+           <!--<p>Web Developer</p> -->   
+            </div>
+            <div class="right-container">
+              <h3 class="gradienttext">Location details</h3>
+              <table>
+                  <tbody>
+                <tr>
+                  <td>Mobile</td>
+                  
+                  <td>Mr.Ryan Chain :+1 (754)268-4873 </td>
+                </tr>
+                <tr>
+                  <td>Email </td>
+                  <td>info@innovatesteamfoundation.org</td>
+                </tr>
+                <tr class="special " >
+                  <td >Address </td>
+                  <td>Irvine High School, 4321 Walnut Ave, CA 92604 </td>
+                
+                </tr>
+              </tbody>
+              </table>
+     <button class="full-rounded" >
+                    <a href="https://www.google.com/maps/place/Irvine+High+School/@33.7026592,-117.7789756,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcdcf42c5e54f3:0x5bf4f42d30752325!8m2!3d33.7026548!4d-117.7815505!16zL20vMDM1dnA2?entry=ttu" target="_blank">chick to see the map</a>
+                               
+                 
+                  </button>
+</div>
+</div>
+    </div>
+
+</section>
+</div>
+      <script>
+              const mapButton = document.querySelector('.full-rounded'); // Select the button element
+            
+              mapButton.addEventListener('click', () => {
+                window.open(mapButton.querySelector('a').href, '_blank'); // Get the link's href and open in a new tab
+              });
+      </script>
+
+
+<!--end location -->
+
+
+
+<!--start our partners-->
+<section class="section" id="s10">
+  <div class="content-wrapper">
+    <div class="img11"></div>
+    <article class="title">
+        <h2> Our sponsors </h2>
+        <p>"Because of you, we can"</p>
+        
+    </article>
+  </div>
+</section>
+<section class="sponsors">
+  <div class="main">
+    <div class="profile-card">
+        <div class="img">
+            <img src="imgs/stem square.jpg">
+        </div>
+        <div class="caption">
+            <h3>STEM-Foundation-RGB</h3>
+            <p>want more info.?</p>
+            <div class="social-links">
+             
+                <a target="_blank" href="https://innovatesteamfoundation.org/about/">
+                  <button class="button-17" role="button">click here</button>
+                </a>
+             
+            </div>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="img">
+            <img src="imgs/tecnio.jpg">
+        </div>
+        <div class="caption">
+            <h3>Genio Tech</h3>
+            <p>Want more Info ?</p>
+            <div class="social-links">
+              <a target="_blank" href="https://geniotech.org/">
+                <button class="button-17" role="button">click here</button>
+              </a>
+             
+               
+            </div>
+        </div>
+    </div>
+   
+</div>
+</section>
+
+<!--end location -->
+
+  </body>
+
+
+
+
+
+
+    <script src="index.js"></script>
+   
+      <!-- Scroll Reveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+  
+    <!-- Footer -->
+    <footer>
+    <div class="footer">
+       
+        <div class="row">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=61555466910514"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://github.com/AbdelwahabAdam/CodersCup"><i class="fa-brands fa-github"></i></i></a>
+            
+            </div>
+            
+            <div class="row">
+            <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">gallary</a></li>
+            <li><a href="#">task</a></li>
+            <li><a href="#">timeline</a></li>
+            </ul>
+            </div>
+            
+            <div class="row">
+              CODERCUP Copyright © 2024 Codercup - All rights reserved || Designed By: Hoor 
+            </div>
+            </div>
+        </div>
+    </footer>
+  
