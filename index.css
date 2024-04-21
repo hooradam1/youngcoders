@@ -1376,10 +1376,10 @@ width: 95%;
   
   .right-slide > div {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     height: 100%;
-    width: 100%;
+    width: 80%;
   }
   
   button {
