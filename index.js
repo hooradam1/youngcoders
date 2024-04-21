@@ -82,7 +82,7 @@ ScrollReveal().reveal('#s1',{
     duration: 1500,
     opacity: 0,
     distance: '40px',
-    origin: "bottom",
+    origin: "top",
     reset: true
   });
 
