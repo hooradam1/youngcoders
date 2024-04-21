@@ -1948,7 +1948,7 @@ width: 95%;
  /* Media Queries for smaller screens (optional) */
  @media (max-width: 768px) {
  .sponsors .main {
-  flex-direction: column;
+  flex-direction: row;
    /* Adjust card width for smaller screens */
    margin-left: auto;
    margin-right: auto ;
